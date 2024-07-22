@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+p{
+  text-align: left;
+}
+
+.dot-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-image: radial-gradient(circle, #000 1px, rgba(255, 255, 255, 0) 1px);
+  background-size: 3px 3px; /* 도트 크기 조절 */
+}
+
+.pentagram {    
+  position: relative;
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  margin: 50px 0;
+   
+  border-right: 80px solid transparent;
+  border-left: 80px solid transparent;
+  border-bottom: 56px  solid #ffd67a;    
+  transform: rotate(35deg);
+}
+
+  
+.pentagram::before,
+.pentagram::after{
+  content: "";
+  position: absolute;
+  width: 0px;
+  top: 0;
+  height: 0px;
+  color: #ffd67a;    
+  left: -80px;        
+  border-right: 80px solid transparent;
+  border-left: 80px solid transparent;
+  border-bottom: 56px solid #ffd67a;
+}
+  
+.pentagram::before {
+  transform: rotate(71deg);
+}
+  
+.pentagram::after {
+  transform: rotate(-71deg);
+} 
+
+.start{
+  opacity: 0; 
+}
+
+.end{
+  opacity: 1; 
+  transition: opacity 0.5s; 
+}
+.aaa{
+  display:flex; 
+
+}
+
+.RowAccountContainer{
+  
+  
+  
+  padding: 10px 0px;  
+  border: 1px solid; 
+  border-radius: 5%;  
+  background: rgba(256,256,256,1); 
+}
+.ColAccountForm{
+  width:70%;
+  margin: auto; 
+  padding: 20px 0px 5px 0px; 
+  background:rgba(0,0,0,0.6); 
+  border-radius: 5%; 
+}
+.RowAccountContainer2{
+  
+  
+  background-color: rgba(0,0,0,0.7); 
+  padding: 10px 0px;  
+  border: 1px solid; 
+  border-radius: 5%;  
+  color: white; 
+}
+.ColAccountForm2{
+  width:70%;
+  margin: auto; 
+  padding: 20px 0px 5px 0px; 
+  background:rgba(256,256,256,0.9); 
+  border-radius: 5%; 
+}
+
+.pAccount_1{
+  color: white; 
+  text-align: center; 
+  margin: 40px; 
+}
+
+.buttonAccount_1{
+  border-radius: 5px;
+  border: none; 
+}
+.CardComponent{
+  width: 19rem; 
+  height: 20rem; 
+  padding: 5px; 
+  display: grid; 
+  margin-bottom: 10px; 
+}
+.FormLoginComponent{
+width: 20%; 
+margin: auto; 
+padding: 30px; 
+border: 1px solid; 
+border-radius: 5px; 
+background: rgba(256,256,256,1);
+}
+.FormComponent{
+  background: rgba(0,0,0,0.4); 
+  padding: 50px; 
+  margin: 10px;
+}
+.FormCreateComponent{
+  width: 20%; 
+  margin: 50px auto; 
+  padding: 30px; 
+  border: 1px solid; 
+  border-radius: 5px;
+}
